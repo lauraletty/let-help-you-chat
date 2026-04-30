@@ -1,0 +1,82 @@
+import { Zap, Droplets, Wrench, Sparkles, BookOpen } from 'lucide-react';
+import { Provider, Category, Review } from '../types';
+
+export const CATEGORIES: Category[] = [
+  { id: 'electrician', name: 'Electrician', icon: Zap, color: 'bg-yellow-500' },
+  { id: 'plumber', name: 'Plumber', icon: Droplets, color: 'bg-blue-500' },
+  { id: 'mechanic', name: 'Mechanic', icon: Wrench, color: 'bg-gray-600' },
+  { id: 'cleaner', name: 'Cleaner', icon: Sparkles, color: 'bg-teal-500' },
+  { id: 'tutor', name: 'Tutor', icon: BookOpen, color: 'bg-purple-500' },
+];
+
+export const PROVIDERS: Provider[] = [
+  {
+    id: '1',
+    name: 'Wanjiku Kamau',
+    category: 'Electrician',
+    gender: 'Female',
+    rating: 4.9,
+    reviewsCount: 124,
+    distance: '0.8 km',
+    badge: 'Gold',
+    image: 'https://storage.googleapis.com/dala-prod-public-storage/generated-images/b502a0de-1969-4b96-84d0-b3a0d1cd7493/kenyan-electrician-female-c3fa941c-1777531771868.webp',
+    description: 'Expert residential electrician with 10+ years of experience in Nairobi. Certified in smart home installations and complex wiring.',
+    isOnline: true,
+    pricePerHour: 1500,
+    skills: ['Wiring', 'Smart Home', 'Repairs', 'Lighting'],
+    location: 'Westlands, Nairobi',
+  },
+  {
+    id: '2',
+    name: 'John Otieno',
+    category: 'Plumber',
+    gender: 'Male',
+    rating: 4.7,
+    reviewsCount: 89,
+    distance: '1.2 km',
+    badge: 'Silver',
+    image: 'https://storage.googleapis.com/dala-prod-public-storage/generated-images/b502a0de-1969-4b96-84d0-b3a0d1cd7493/kenyan-plumber-male-8f77bd7d-1777531771302.webp',
+    description: 'Specializing in kitchen and bathroom plumbing. Fast response time within Kilimani and reliable service.',
+    isOnline: false,
+    pricePerHour: 1200,
+    skills: ['Pipe Fixing', 'Leakage', 'Installation', 'Drainage'],
+    location: 'Kilimani, Nairobi',
+  },
+  {
+    id: '3',
+    name: 'Samuel Mwangi',
+    category: 'Mechanic',
+    gender: 'Male',
+    rating: 4.8,
+    reviewsCount: 156,
+    distance: '3.1 km',
+    badge: 'Gold',
+    image: 'https://storage.googleapis.com/dala-prod-public-storage/generated-images/b502a0de-1969-4b96-84d0-b3a0d1cd7493/kenyan-mechanic-male-3dc4f071-1777531771814.webp',
+    description: 'Mobile mechanic for all car types. Engine diagnostics, brake repairs, and routine maintenance at your doorstep in Karen.',
+    isOnline: true,
+    pricePerHour: 2500,
+    skills: ['Diagnostics', 'Brakes', 'Oil Change', 'Engine'],
+    location: 'Karen, Nairobi',
+  },
+  {
+    id: '4',
+    name: 'Alice Nyambura',
+    category: 'Tutor',
+    gender: 'Female',
+    rating: 4.6,
+    reviewsCount: 42,
+    distance: '2.5 km',
+    badge: 'Bronze',
+    image: 'https://storage.googleapis.com/dala-prod-public-storage/generated-images/b502a0de-1969-4b96-84d0-b3a0d1cd7493/kenyan-tutor-female-07ba6e3b-1777531771410.webp',
+    description: 'Professional high school tutor specializing in Mathematics and Physics. Home-based learning in South C.',
+    isOnline: true,
+    pricePerHour: 1000,
+    skills: ['Mathematics', 'Physics', 'Exam Prep'],
+    location: 'South C, Nairobi',
+  },
+];
+
+export const REVIEWS: Review[] = [
+  { id: 'r1', userName: 'Faith M.', rating: 5, comment: 'Wanjiku was amazing! Fixed my wiring issue in Westlands quickly. Very professional.', date: '2 days ago', isVerified: true },
+  { id: 'r2', userName: 'Mark T.', rating: 4, comment: 'Good service, arrived on time. Price was fair for the quality.', date: '1 week ago', isVerified: true },
+];
